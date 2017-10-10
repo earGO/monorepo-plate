@@ -1,6 +1,6 @@
 pages:
   stage: deploy
   script:
-  - npm -v
+  - npm i npm -g
   only:
   - master # or dev, the branch you want to publish
