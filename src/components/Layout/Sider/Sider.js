@@ -1,0 +1,16 @@
+import React from 'react'
+import './Sider.css'
+import { Layout } from 'antd'
+
+const { Sider } = Layout
+
+//https://ant.design/components/layout/#Layout.Sider
+const CustomizedSider = ({ children, ...rest }) => (
+  <Sider className="layout-sider">
+    { children }
+  </Sider>
+)
+
+CustomizedSider.__ANT_LAYOUT_SIDER = true
+
+export default CustomizedSider
