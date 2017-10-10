@@ -1,6 +1,6 @@
 pages:
   stage: deploy
   script:
-  - npm install
+  - echo 123
   only:
   - master # or dev, the branch you want to publish
