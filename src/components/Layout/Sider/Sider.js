@@ -6,7 +6,7 @@ const { Sider } = Layout
 
 //https://ant.design/components/layout/#Layout.Sider
 const CustomizedSider = ({ children, ...rest }) => (
-  <Sider className="layout-sider">
+  <Sider className="layout-sider" { ...rest }>
     { children }
   </Sider>
 )
