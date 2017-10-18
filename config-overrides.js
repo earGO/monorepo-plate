@@ -13,4 +13,6 @@ module.exports = function override(config, env) {
   config = rewireLess(config, env, { modifyVars: theme });
 
   return config;
+
+  console.log('test string');
 };
