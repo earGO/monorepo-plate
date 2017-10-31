@@ -4,7 +4,9 @@ variables:
   DEPLOY_PATH: "/opt/ursip/summoners"
 
 before_script:
-  - npm install
+  - node --version
+  - npm --version
+  - npm install --loglevel http
 
 stages:
   - build
