@@ -14,7 +14,7 @@ before_script:
   - npm --version
 
 bundle:
-  stage: test
+  stage: build
   script:
     - npm install --loglevel http
     - npm run build
