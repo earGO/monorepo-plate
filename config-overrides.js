@@ -14,5 +14,4 @@ module.exports = function override(config, env) {
 
   return config;
 
-  console.log('test string');
 };
