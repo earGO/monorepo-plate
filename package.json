@@ -12,12 +12,11 @@
     "redux-thunk": "^2.2.0"
   },
   "scripts": {
-    "start": "react-app-rewired  start",
-    "build": "react-app-rewired  build"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build"
   },
   "devDependencies": {
     "babel-plugin-import": "^1.4.0",
-    "pre-commit-package-version": "^1.0.7",
     "react-app-rewire-less": "^2.0.7",
     "react-app-rewired": "^1.2.5"
   }
