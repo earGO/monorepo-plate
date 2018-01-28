@@ -3,7 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Content from './Content'
 import Sider from './Sider'
-import './Layout.css'
+import './Layout.less'
 
 Layout.Header = Header
 Layout.Footer = Footer

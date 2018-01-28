@@ -1,5 +1,5 @@
 import React from 'react'
-import './Sider.css'
+import './Sider.less'
 import { Layout } from 'antd'
 
 const { Sider } = Layout

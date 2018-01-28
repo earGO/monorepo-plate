@@ -4,10 +4,10 @@
   "private": true,
   "dependencies": {
     "antd": "^3.1.6",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
-    "react-scripts": "1.0.13",
+    "react-scripts": "1.1.0",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0"
   },
@@ -16,8 +16,9 @@
     "build": "react-app-rewired build"
   },
   "devDependencies": {
-    "babel-plugin-import": "^1.4.0",
-    "react-app-rewire-less": "^2.0.7",
-    "react-app-rewired": "^1.2.5"
+    "babel-plugin-import": "^1.6.3",
+    "less": "^2.7.3",
+    "react-app-rewire-less": "^2.1.0",
+    "react-app-rewired": "^1.4.0"
   }
 }

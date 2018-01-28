@@ -1,5 +1,5 @@
 import React from 'react'
-import './Footer.css'
+import './Footer.less'
 import logo from './ursip-logo.svg'
 import { Layout, Row, Col, Popover } from 'antd'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../Layout'
-import './Root.css'
+import './Root.less'
 import logo from '../../static/images/logo.svg'
 
 const { Header, Footer, Content, Sider } = Layout
@@ -20,9 +20,8 @@ export default () => (
         width: 70,
         top: 2
       }}
-
       userAvatar=""
-      userName="userName"
+      userName="Гость"
       userOnLogout={ () => console.log('logout') }
 
       printDropdown={ <p>Список печатных форм</p> }
