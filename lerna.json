@@ -1,0 +1,13 @@
+{
+  "lerna": "3.14.1",
+  "registry": "https://gitlab.ursip.ru/nexus/repository/npm",
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "bootstrap": {
+      "npmClientArgs": ["--no-package-lock"]
+    }
+  },
+  "version": "independent"
+}
