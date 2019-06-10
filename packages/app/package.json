@@ -1,0 +1,47 @@
+{
+	"name": "app",
+	"description": "Main application",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts --env=jsdom"
+	},
+	"dependencies": {
+		"@ursip/design-system": "^1.0.1",
+		"connected-react-router": "^6.4.0",
+		"prop-types": "^15.7.2",
+		"ramda": "^0.26.1",
+		"react": "^16.8.6",
+		"react-custom-scrollbars": "^4.2.1",
+		"react-dom": "^16.8.6",
+		"react-helmet": "^5.2.1",
+		"react-normalize": "^0.4.2",
+		"react-redux": "^7.0.3",
+		"react-router-dom": "^5.0.1",
+		"redux": "^4.0.1",
+		"redux-dynamic-modules": "^4.0.0-alpha.1",
+		"redux-dynamic-modules-saga": "^4.0.0",
+		"redux-logger": "^3.0.6",
+		"redux-saga": "^1.0.2",
+		"redux-saga-requests": "^0.24.1",
+		"redux-saga-requests-fetch": "^0.9.6",
+		"reselect": "^4.0.0",
+		"styled-components": "^4.3.0"
+	},
+	"devDependencies": {
+		"react-scripts": "^3.0.1"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}
