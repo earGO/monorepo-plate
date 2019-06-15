@@ -19,7 +19,7 @@ function List(props) {
         <Item
           key={joke.id}
           mb={3}
-          header={'#' + joke.id + ' ' + joke.setup}
+          header={`#${joke.id} ${joke.setup}`}
           content={joke.punchline}
           seen={seen.includes(joke.id)}
           onClick={setSeen(joke.id)}
