@@ -76,7 +76,6 @@ const reducers = {
 }
 
 /** Selectors */
-const groupByType = R.groupBy(item => item.type)
 
 const stateSelector = state => state[name] || initialState
 const jokesServiceSelector = state => state[jokesService.name] || []
@@ -103,7 +102,7 @@ const searchQuery = createSelector(
 
 const grouped = createSelector(
   jokesServiceSelector,
-  data => groupByType(data),
+  data => R.groupBy(joke => joke.type)(data),
 )
 
 const groupNames = createSelector(
