@@ -68,7 +68,7 @@ const reducers = {
     selectedGroup: payload.selectedGroup,
   }),
   [types.SEARCH]: (_, { payload }) => ({
-    searchQuery: payload.searchQuery,
+    searchQuery: payload.searchQuery && '',
   }),
   [types.SET_SEEN]: (state, { payload }) => ({
     seenJokes: [...new Set(state.seenJokes.concat(payload.id))],
@@ -118,14 +118,12 @@ const byGroupName = createSelector(
 )
 
 const getData = createSelector(
-  grouped,
+  byGroupName,
   searchQuery,
-  selectedGroup,
-  jokesServiceSelector,
-  (grouped, searchQuery, selectedGroup, allJokes) =>
-    (grouped[selectedGroup] || allJokes)
+  (jokes, searchQuery) =>
+    jokes
       .filter(item => {
-        const { id, ...searchData } = item
+        const { id, type, ...searchData } = item
         return JSON.stringify(Object.values(searchData))
           .toLowerCase()
           .includes(searchQuery.toLowerCase())
