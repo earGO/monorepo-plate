@@ -1,6 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { DynamicModuleLoader } from 'redux-dynamic-modules'
 
 import JokesDuck, { selectors as jokesSelectors, actions as jokesActions } from './jokes-duck'
@@ -9,8 +8,12 @@ import List from './List'
 import Groups from './Groups'
 import SearchInput from '../common/SearchInput'
 
-function Jokes({ loading, searchQuery, search }) {
-  const handleSearch = value => search(value)
+function Jokes() {
+  const loading = useSelector(jokesSelectors.loading)
+  const searchQuery = useSelector(jokesSelectors.searchQuery)
+
+  const dispatch = useDispatch()
+  const handleSearch = value => dispatch(jokesActions.search(value))
 
   return (
     <DynamicModuleLoader modules={[JokesDuck]}>
@@ -22,22 +25,4 @@ function Jokes({ loading, searchQuery, search }) {
   )
 }
 
-Jokes.propTypes = {
-  loading: PropTypes.bool,
-  searchQuery: PropTypes.string,
-}
-
-Jokes.defaultProps = {
-  loading: false,
-  searchQuery: '',
-}
-
-export default connect(
-  state => ({
-    loading: jokesSelectors.loading(state),
-    searchQuery: jokesSelectors.searchQuery(state),
-  }),
-  {
-    search: jokesActions.search,
-  },
-)(Jokes)
+export default Jokes

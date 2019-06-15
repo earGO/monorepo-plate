@@ -1,15 +1,18 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { compose } from 'redux'
-import { connect } from 'react-redux'
-import { withRouter } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux'
 import { Flex } from '@ursip/design-system'
 
 import Item from './Item'
 
-import { selectors as jokesSelectors, actions as jokesActions } from './jokes-duck'
+import * as JokesDuck from './jokes-duck'
 
-function List({ jokes, seen, setSeen, ...props }) {
+function List(props) {
+  const jokes = useSelector(JokesDuck.selectors.getData)
+  const seen = useSelector(JokesDuck.selectors.seenJokes)
+  const dispatch = useDispatch()
+
+  const setSeen = id => () => dispatch(JokesDuck.actions.setSeen(id))
+
   return (
     <Flex flexDirection="column" {...props}>
       {jokes.map(joke => (
@@ -19,34 +22,11 @@ function List({ jokes, seen, setSeen, ...props }) {
           header={'#' + joke.id + ' ' + joke.setup}
           content={joke.punchline}
           seen={seen.includes(joke.id)}
-          onClick={() => setSeen(joke.id)}
+          onClick={setSeen(joke.id)}
         />
       ))}
     </Flex>
   )
 }
 
-List.propTypes = {
-  jokes: PropTypes.array,
-  seen: PropTypes.array,
-}
-
-List.defaultProps = {
-  jokes: [],
-  seen: [],
-}
-
-const withConnect = connect(
-  (state, props) => ({
-    jokes: jokesSelectors.getData(state, props),
-    seen: jokesSelectors.seenJokes(state),
-  }),
-  {
-    setSeen: jokesActions.setSeen,
-  },
-)
-
-export default compose(
-  withRouter,
-  withConnect,
-)(List)
+export default List
