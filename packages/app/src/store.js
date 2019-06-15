@@ -8,21 +8,6 @@ import { createBrowserHistory } from 'history'
 
 const history = createBrowserHistory()
 
-const getDebugExtension = () => {
-  const log = (module = {}, action) => {
-    const consoleColor = 'color: green'
-
-    if (process.env.NODE_ENV === 'development') {
-      console.log(`%cModule "${module.id}" ${action}`, consoleColor)
-    }
-  }
-
-  return {
-    onModuleAdded: module => log(module, 'added'),
-    onModuleRemoved: module => log(module, 'removed'),
-  }
-}
-
 const requestSaga = function*() {
   yield createRequestInstance({
     driver: createDriver(window.fetch),
@@ -47,7 +32,7 @@ const modules = [
   },
 ]
 
-const store = createStore({}, [], [getDebugExtension(), getSagaExtension()], modules)
+const store = createStore({}, [], [getSagaExtension()], modules)
 
 store.history = history
 
