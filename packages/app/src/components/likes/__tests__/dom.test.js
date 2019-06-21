@@ -4,11 +4,11 @@ import Adapter from 'enzyme-adapter-react-16'
 import ReactDOM from 'react-dom'
 import Like from '../Like'
 import Dislike from '../Dislike'
-import Likes from '../Likes'
 import { fetchApi } from '../../../utils/testApiCall'
 import { getFirst } from '../../../utils/hashTables'
 import * as LikesModule from '../likes-duck'
 import LikesAmnt from '../LikesAmnt'
+import { LikesDisconnected } from '../Likes'
 
 configure({ adapter: new Adapter() })
 
@@ -24,7 +24,7 @@ beforeAll(async () => {
   singleamnt = singleChunk[0]
 })
 
-describe('Test Like component with Enzyme and snapshots', () => {
+describe('Test Like component with Enzyme', () => {
   test('renders w/o props', () => {
     const wrapper = shallow(<Like />)
     expect(wrapper.exists()).toBe(true)
@@ -40,7 +40,7 @@ describe('Test Like component with Enzyme and snapshots', () => {
   })
 })
 
-describe('Test LikesAmnt component with Enzyme and snapshots', () => {
+describe('Test LikesAmnt component with Enzyme', () => {
   test('renders w/o props', () => {
     const wrapper = shallow(<LikesAmnt />)
     expect(wrapper.exists()).toBe(true)
@@ -51,7 +51,7 @@ describe('Test LikesAmnt component with Enzyme and snapshots', () => {
   })
 })
 
-describe('Test Dislike component with Enzyme and snapshots', () => {
+describe('Test Dislike component with Enzyme', () => {
   test('renders w/o props', () => {
     const wrapper = shallow(<Dislike />)
     expect(wrapper.exists()).toBe(true)
@@ -67,13 +67,18 @@ describe('Test Dislike component with Enzyme and snapshots', () => {
   })
 })
 
-describe('Test Likes component with Enzyme and snapshots', () => {
+describe('Test Likes component with Enzyme with no Redux & Router', () => {
   test('renders w/o props', () => {
-    const wrapper = shallow(<Likes />)
+    const wrapper = shallow(<LikesDisconnected />)
     expect(wrapper.exists()).toBe(true)
   })
-  test('renders w external props', () => {
-    const wrapper = shallow(<Likes jokeId={singleId} />)
+  test('onClick gets function from parent', () => {
+    const wrapper = shallow(<LikesDisconnected onClick={() => {}} />)
     expect(wrapper.exists()).toBe(true)
+  })
+  it('renders without crashing', () => {
+    const div = document.createElement('div')
+    ReactDOM.render(<LikesDisconnected />, div)
+    ReactDOM.unmountComponentAtNode(div)
   })
 })

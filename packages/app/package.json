@@ -5,11 +5,12 @@
 	"scripts": {
 		"start": "set PORT=3006 && react-scripts start",
 		"build": "react-scripts build",
-		"test": "jest --watchAll --verbose --updateSnapshot"
+		"test": "jest --watchAll --verbose --updateSnapshot --coverage"
 	},
 	"dependencies": {
 		"@ursip/design-system": "^1.0.1",
 		"connected-react-router": "^6.4.0",
+		"core-js": "^3.1.4",
 		"prop-types": "^15.7.2",
 		"ramda": "^0.26.1",
 		"react": "^16.8.6",
@@ -30,7 +31,6 @@
 		"styled-components": "^4.3.1"
 	},
 	"devDependencies": {
-		"react-scripts": "^3.0.1",
 		"@babel/core": "^7.4.5",
 		"@babel/preset-env": "^7.4.5",
 		"@babel/preset-react": "^7.0.0",
@@ -43,11 +43,12 @@
 		"jsdom": "^15.1.1",
 		"node-fetch": "^2.6.0",
 		"react-addons-test-utils": "^15.6.2",
+		"react-scripts": "^3.0.1",
 		"react-test-renderer": "^16.8.6",
+		"redux-mock-store": "^1.5.3",
 		"redux-saga-test-plan": "^4.0.0-beta.3",
 		"redux-thunk": "^2.3.0",
 		"sinon": "^7.3.2"
-
 	},
 	"browserslist": {
 		"production": [

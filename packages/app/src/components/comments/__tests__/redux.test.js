@@ -4,9 +4,7 @@ import * as commentsService from '../../../services/comments'
 
 import { call } from 'redux-saga/effects'
 import { expectSaga } from 'redux-saga-test-plan'
-import { success } from 'redux-saga-requests'
-
-import { types, sagas } from '../comments-duck'
+import { actions, types, sagas } from '../comments-duck'
 import { fetchApi } from '../../../utils/testApiCall'
 import { getFirst, makePatch } from '../../../utils/hashTables'
 import { patchComment } from '../../../utils/serverRequests'
@@ -15,13 +13,16 @@ import { patchComment } from '../../../utils/serverRequests'
 const api = commentsService.api,
   targetState = commentsService.name
 let onePiece = {} //one comment under specific post
-let oneChunk = [] //all comments under one post
+let oneChunk = [],
+  comments = [] //all comments under one post
 let allData = {} //all posts from database
 let globalKey, //the id of specific post
   userString, //user, that wrote the post comment,put to String
   content, //comment body
   date = '', //comment date
-  user = {} //comment author
+  user = {}, //comment author
+  jokeId,
+  id = ''
 let dataWithPayload = {}
 let payload = {}
 let idPayload = {}
@@ -57,6 +58,8 @@ beforeAll(async () => {
   requestBody.url = `${api}`
   requestObject['request'] = requestBody
   stateObject[targetState] = allData
+  comments = oneChunk
+  jokeId, (id = globalKey)
 })
 
 afterAll(() => {
@@ -102,5 +105,28 @@ describe('Test Comments sagas with redux-saga-plan', () => {
       .put({ type: commentsService.types.LOAD_COMMENTS, payload: requestObject })
       .hasFinalState({ stateObject })
       .run(1500)
+  })
+})
+
+describe('test action creations', () => {
+  it('creates addComment', () => {
+    const add = actions.addComment(user, content, comments, jokeId)
+    expect(add).toStrictEqual({ type: types.ADD_COMMENT, payload: { user, content, comments, jokeId } })
+  })
+  it('creates setOpen', () => {
+    const setOpen = actions.setOpen(id)
+    expect(setOpen).toStrictEqual({ type: types.SET_OPEN, payload: { id } })
+  })
+  it('creates setClose', () => {
+    const setClose = actions.setClose(id)
+    expect(setClose).toStrictEqual({ type: types.SET_CLOSE, payload: { id } })
+  })
+  it('creates setAddOpen', () => {
+    const setAddOpen = actions.setAddOpen(id)
+    expect(setAddOpen).toStrictEqual({ type: types.ADD_OPEN, payload: { id } })
+  })
+  it('creates setAddClose', () => {
+    const setAddClose = actions.setAddClose(id)
+    expect(setAddClose).toStrictEqual({ type: types.ADD_CLOSE, payload: { id } })
   })
 })

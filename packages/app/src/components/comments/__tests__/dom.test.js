@@ -2,6 +2,7 @@ import React from 'react'
 import { configure, shallow, mount } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import ReactDOM from 'react-dom'
+
 import Comment from '../Comment'
 import AddComment from '../AddComment'
 import { fetchApi } from '../../../utils/testApiCall'

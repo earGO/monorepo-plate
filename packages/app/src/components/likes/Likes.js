@@ -4,14 +4,12 @@ import { Flex, Relative } from '@ursip/design-system'
 
 import { useSelector, useDispatch } from 'react-redux'
 import { actions as likesActions, selectors as likesSelectors } from '../likes/likes-duck'
-import { compose } from 'redux'
-import { withRouter } from 'react-router-dom'
-import { connect } from 'react-redux'
 import Like from './Like'
 import Dislike from './Dislike'
 import LikesAmnt from './LikesAmnt'
+import noop from '../../utils/noop'
 
-function Likes({ like, unlike, jokeId, postLikes }) {
+export const LikesDisconnected = ({ jokeId, postLikes, like, unlike }) => {
   const likeCombined = (id, likesArray) => () => {
     like(id, likesArray)
   }
@@ -30,30 +28,35 @@ function Likes({ like, unlike, jokeId, postLikes }) {
   )
 }
 
+function Likes({ jokeId }) {
+  const postLikes = useSelector(likesSelectors.postLikes)
+
+  const dispatch = useDispatch()
+  const like = (likes, id) => dispatch(likesActions.like(likes, id))
+  const unlike = (likes, id) => dispatch(likesActions.unlike(likes, id))
+
+  // const likeCombined = (id, likesArray) => () => {
+  //   like(id, likesArray)
+  // }
+  // const dislikeCombined = (id, likesArray) => () => {
+  //   unlike(id, likesArray)
+  // }
+  // const likesAmnt = postLikes[jokeId] || 0
+  return <LikesDisconnected jokeId={jokeId} postLikes={postLikes} like={like} unlike={unlike} />
+}
+
 Likes.propTypes = {
   postLikes: PropTypes.object,
   jokeId: PropTypes.string,
   like: PropTypes.func,
   unlike: PropTypes.func,
-  save: PropTypes.func,
 }
 
 Likes.defaultProps = {
   postLikes: {},
-  jokeId: '',
+  jokeId: 'no_id_from_parent',
+  like: noop,
+  unlike: noop,
 }
 
-const withConnect = connect(
-  (state, props) => ({
-    postLikes: likesSelectors.postLikes(state),
-  }),
-  {
-    like: likesActions.like,
-    unlike: likesActions.unlike,
-  },
-)
-
-export default compose(
-  withRouter,
-  withConnect,
-)(Likes)
+export default Likes
