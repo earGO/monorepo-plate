@@ -10,11 +10,13 @@ import pkg from '../../../package.json'
  * Main application layout
  */
 function Layout({ children, width, maxWidth, history, ...props }) {
+  console.log('Layput sees props as:', props)
   const handleLogoClick = () => history.push('/')
   const year = new Date().getFullYear()
 
   return (
     <Flex height="100vh" flexDirection="column" alignItems="stretch" {...props}>
+      {/*header section*/}
       <Box bg="lightGrey">
         <Flex mx="auto" alignItems="center" width={width} height={63} style={{ maxWidth }}>
           <Box>
@@ -29,6 +31,7 @@ function Layout({ children, width, maxWidth, history, ...props }) {
           <Box ml={3} />
         </Flex>
       </Box>
+      {/*Content section*/}
       <Box flex={1}>
         <Scrollbars style={{ height: '100%' }}>
           <Box mx="auto" py={3} width={width} height="100%" style={{ maxWidth, position: 'relative' }}>
@@ -36,6 +39,7 @@ function Layout({ children, width, maxWidth, history, ...props }) {
           </Box>
         </Scrollbars>
       </Box>
+      {/*footer section*/}
       <Box bg="lightGrey">
         <Box mx="auto" py={2} width={width} style={{ maxWidth }} justifyContent="space-between">
           <Text color="darkGrey" fontSize={0} align="right">

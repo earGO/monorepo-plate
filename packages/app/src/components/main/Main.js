@@ -2,11 +2,16 @@ import React from 'react'
 import Link from '../common/Link'
 import { Card, Flex, Text } from '@ursip/design-system'
 import * as jokesModule from '../jokes/jokes-duck'
+import * as norrisModule from '../norrisJokes/norris-duck'
 
 const modules = [
   {
     name: jokesModule.name,
     route: jokesModule.baseRoute,
+  },
+  {
+    name: norrisModule.name,
+    route: norrisModule.baseRoute,
   },
 ]
 

@@ -29,7 +29,7 @@ const actions = {
 export default function reducer(jokes = [], { type, payload }) {
   switch (type) {
     case success(LOAD_JOKES):
-      return jokes.concat(payload.data)
+      return payload.data
 
     case error(LOAD_JOKES):
     default:

@@ -9,6 +9,12 @@
     "test": "npm run build:prod && lerna run test"
   },
   "devDependencies": {
-    "lerna": "^3.14.1"
+    "lerna": "^3.14.1",
+    "prettier": "^1.18.2",
+    "redux-mock-store": "^1.5.3"
+  },
+  "dependencies": {
+    "redux-dynamic-modules-saga": "^4.0.1",
+    "redux-logger": "^3.0.6"
   }
 }
