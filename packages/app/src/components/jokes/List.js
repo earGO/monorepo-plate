@@ -19,8 +19,8 @@ function List(props) {
   const dispatch = useDispatch()
   const setOpen = value => dispatch(jokesActions.setOpen(value))
   const setClose = value => dispatch(jokesActions.setClose(value))
-
   const setSeen = id => () => dispatch(JokesDuck.actions.setSeen(id))
+
   const selector = (id, opened, setOpen, setClose) => () => {
     setSeen(id)
     selectorOnId(id, opened, setOpen, setClose)

@@ -12,6 +12,7 @@ import Loading from '../common/Loading'
 import NorrisList from './NorrisList'
 
 function NorrisJoke({ loading, user, jokes }) {
+  console.log('user in ChuckNorris', user)
   return (
     <DynamicModuleLoader modules={[NorrisDuck, UserDuck, CommentsDuck, LikesDuck]}>
       {loading ? (

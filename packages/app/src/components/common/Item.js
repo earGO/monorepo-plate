@@ -38,8 +38,7 @@ const BouncingText = styled(Text)`
   }
 `
 
-function Item({ header, contentPostfix, onClick, opened, children, punchline, jokeId, user, ...props }) {
-  console.log({})
+function Item({ header, contentPostfix, onClick, opened, children, punchline, ...props }) {
   return (
     <StyledCard p={4} {...props}>
       <Flex>
@@ -78,7 +77,6 @@ Item.defaultProps = {
   transparent: false,
   onClick: noop,
   opened: false,
-  jokeId: '1',
   openedComments: false,
   addComment: false,
 }
