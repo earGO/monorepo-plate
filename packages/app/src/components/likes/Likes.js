@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Flex, Relative } from '@ursip/design-system'
 
+import { useSelector, useDispatch } from 'react-redux'
 import { actions as likesActions, selectors as likesSelectors } from '../likes/likes-duck'
 import { compose } from 'redux'
 import { withRouter } from 'react-router-dom'

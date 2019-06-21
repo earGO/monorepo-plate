@@ -128,7 +128,7 @@ const rootSaga = function*() {
   yield all([watchIncrements()])
 }
 
-export { name, selectors, types, reducers, actions }
+export { api, name, selectors, types, reducers, actions }
 
 export default {
   id: name,

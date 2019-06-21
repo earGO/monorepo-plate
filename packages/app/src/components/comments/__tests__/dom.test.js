@@ -1,8 +1,6 @@
 import React from 'react'
-import Enzyme, { shallow, mount } from 'enzyme'
+import { configure, shallow, mount } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-import { configure } from 'enzyme'
-import sinon from 'sinon'
 import ReactDOM from 'react-dom'
 import Comment from '../Comment'
 import AddComment from '../AddComment'
@@ -10,7 +8,6 @@ import { fetchApi } from '../../../utils/testApiCall'
 import { getFirst } from '../../../utils/hashTables'
 import * as CommentsModule from '../comments-duck'
 import CommentsList from '../CommentsList'
-import Comments from '../Comments'
 
 /**To test some components we need some data.
  * To use this data in tests we declare it globaly, then fill all data from mock api

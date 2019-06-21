@@ -149,7 +149,6 @@ function* handleSaveComments(data) {
     yield put(commentsService.actions.load())
   } catch (err) {
     // You get it
-    yield put(types.SAVE_COMMENTS_FAILED(err))
   }
 }
 //Initial load saga
@@ -175,7 +174,15 @@ const rootSaga = function*() {
   yield all([watchIncrements()])
 }
 
-export { api, name, selectors, types, reducers, actions }
+const sagas = {
+  handleAddCommentToState,
+  handleSaveComments,
+  loadComments,
+  watchIncrements,
+  rootSaga,
+}
+
+export { api, name, selectors, types, reducers, actions, sagas }
 
 export default {
   id: name,
