@@ -101,7 +101,7 @@ function* handleSave(likes) {
     yield put(likesService.actions.load())
   } catch (err) {
     // You get it
-    yield put(types.SAVE_LIKES_FAILED(err))
+    // yield put(types.SAVE_LIKES_FAILED(err))
   }
 }
 //Initial load saga
@@ -127,8 +127,14 @@ function* watchIncrements() {
 const rootSaga = function*() {
   yield all([watchIncrements()])
 }
-
-export { api, name, selectors, types, reducers, actions }
+const sagas = {
+  handleIncrement,
+  handleDecrement,
+  handleSave,
+  loadLikes,
+  watchIncrements,
+}
+export { api, name, selectors, types, reducers, actions, sagas }
 
 export default {
   id: name,

@@ -16,12 +16,13 @@ export const LikesDisconnected = ({ jokeId, postLikes, like, unlike }) => {
   const dislikeCombined = (id, likesArray) => () => {
     unlike(id, likesArray)
   }
-  const likesAmnt = postLikes[jokeId] || 0
+  const innerPostLikes = postLikes || {}
+  const likesAmnt = innerPostLikes[jokeId] || 0
   return (
     <Relative>
       <Flex>
-        <Like onClick={likeCombined(postLikes, jokeId)} />
-        <Dislike onClick={dislikeCombined(postLikes, jokeId)} />
+        <Like onClick={likeCombined(postLikes || {}, jokeId)} />
+        <Dislike onClick={dislikeCombined(postLikes || {}, jokeId)} />
         <LikesAmnt likesAmnt={likesAmnt} />
       </Flex>
     </Relative>

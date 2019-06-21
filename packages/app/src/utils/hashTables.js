@@ -1,4 +1,5 @@
 export const incrementField = (objectToIncrement, value) => {
+  console.log('hastables increment field recieved payload:', objectToIncrement)
   const id = objectToIncrement.payload.id
   let workingBody = { ...objectToIncrement.payload.likes }
   if (!workingBody.hasOwnProperty(id)) {
