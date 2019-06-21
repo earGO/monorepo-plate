@@ -5,6 +5,9 @@ import { createDriver } from 'redux-saga-requests-fetch'
 import { getSagaExtension } from 'redux-dynamic-modules-saga'
 import { fork } from 'redux-saga/effects'
 import { createBrowserHistory } from 'history'
+import { logger } from 'redux-logger/src'
+
+//local storage
 
 const history = createBrowserHistory()
 
@@ -23,6 +26,7 @@ const modules = [
       router: connectRouter(history),
     },
     middlewares: [
+      logger,
       routerMiddleware(history),
       requestsPromiseMiddleware({
         auto: true,
