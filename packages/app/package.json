@@ -3,7 +3,7 @@
 	"description": "Main application",
 	"version": "1.0.0",
 	"scripts": {
-		"start": "set PORT=3006 && react-scripts start",
+		"start": "set PORT=3018 && react-scripts start",
 		"build": "react-scripts build",
 		"test": "jest --watchAll --verbose --updateSnapshot --coverage"
 	},
