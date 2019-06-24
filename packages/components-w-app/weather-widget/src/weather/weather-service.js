@@ -1,23 +1,23 @@
 import {success, error} from 'redux-saga-requests';
 import produce from 'immer';
 
-const name = 'likes-api';
+const name = 'weather-api';
 
 const api =
 	'https://api.openweathermap.org/data/2.5/weather?q=Seattle&APPID=1362c34423375d167d694489b1c74080';
 
 /* Types */
-const LOAD_LIKES = `${name}/LOAD_LIKES`;
+const LOAD_WEATHER = `${name}/LOAD_WEATHER`;
 
 const types = {
-	LOAD_LIKES
+	LOAD_WEATHER
 };
 
 /* Action creators */
 const actions = {
 	weatherLoaded(weather) {
 		return {
-			type: LOAD_LIKES,
+			type: LOAD_WEATHER,
 			payload: weather
 		};
 	}
@@ -27,10 +27,10 @@ const actions = {
 export default function weatherReducer(state, action) {
 	return produce(state || [], draft => {
 		switch (action.type) {
-			case LOAD_LIKES:
+			case LOAD_WEATHER:
 				return [...state, action.payload];
 
-			case error(LOAD_LIKES):
+			case error(LOAD_WEATHER):
 			default:
 				return draft;
 		}
