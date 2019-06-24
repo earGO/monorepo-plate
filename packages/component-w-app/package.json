@@ -1,0 +1,45 @@
+{
+  "name": "@project/component-w-app",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "main:src": "src/index.js",
+  "private": true,
+  "dependencies": {
+    "@react-workspaces/react-scripts": "2.1.1-workspaces-09",
+    "@ursip/design-system": "^1.1.0",
+    "core-js": "^3.1.4",
+    "cross-env": "5.0.5",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.0.2",
+    "redux-saga-requests": "^0.25.0",
+    "redux-saga-requests-fetch": "^0.9.6",
+    "reselect": "^4.0.0",
+    "styled-components": "^4.3.1"
+  },
+  "devDependencies": {
+    "node-fetch": "^2.6.0",
+    "redux-mock-store": "^1.5.3",
+    "redux-saga-test-plan": "^4.0.0-beta.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
