@@ -1,9 +1,11 @@
 import {createSelector} from 'reselect';
 import {put, takeEvery, call, takeLatest, all} from 'redux-saga/effects';
-import {success, error} from 'redux-saga-requests';
+import {success, error, requestsPromiseMiddleware} from 'redux-saga-requests';
 import * as likesService from '../../services/likes';
 import {incrementField} from '../../utils/hashTables';
 import {postData} from '../../utils/serverRequests';
+import {logger} from 'redux-logger/src';
+import {load} from '../../services/likes';
 
 const name = 'likes-service';
 const api = likesService.api;
@@ -98,19 +100,19 @@ function* handleSave(likes) {
 		// Tell redux-saga to call fetch with the specified options
 		yield call(postData, api, likes.payload);
 		// Tell redux-saga to dispatch the saveScoreSucceeded action
-		yield put(likesService.actions.load());
+		yield put(load());
 	} catch (err) {
 		// You get it
 		// yield put(types.SAVE_LIKES_FAILED(err))
 	}
 }
 //Initial load saga
-function* loadLikes() {
-	try {
-		yield put(likesService.actions.load());
-	} catch (e) {
-		//
-	}
+async function* loadLikes() {
+	const url = api;
+	const response = yield await call(fetch, url);
+	const json = yield await call([response, response.json]);
+
+	yield put(load(json));
 }
 
 //sagas watcher
@@ -145,5 +147,11 @@ export default {
 			...(reducers[action.type] && reducers[action.type](state, action))
 		})
 	},
+	middlewares: [
+		logger,
+		requestsPromiseMiddleware({
+			auto: true
+		})
+	],
 	sagas: [rootSaga]
 };

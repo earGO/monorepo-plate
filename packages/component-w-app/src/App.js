@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {Provider} from 'react-redux';
+import store from './store';
+import DynamicLikes from './components/likes';
 
 class App extends Component {
 	render() {
@@ -19,6 +22,9 @@ class App extends Component {
 					>
 						Learn React
 					</a>
+					<Provider store={store}>
+						<DynamicLikes />
+					</Provider>
 				</header>
 			</div>
 		);

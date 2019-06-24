@@ -2820,6 +2820,15 @@ connect-history-api-fallback@^1.3.0:
   resolved "https://gitlab.ursip.ru/nexus/repository/npm/connect-history-api-fallback/-/connect-history-api-fallback-1.6.0.tgz#8b32089359308d111115d81cad3fceab888f97bc"
   integrity sha512-e54B99q/OUoH64zYYRf3HBP5z24G38h5D3qXu23JGRoigpX5Ss4r9ZnDk3g0Z8uQC2x2lPaJ+UlWBc1ZWBWdLg==
 
+connected-react-router@^6.4.0:
+  version "6.4.0"
+  resolved "https://gitlab.ursip.ru/nexus/repository/npm/connected-react-router/-/connected-react-router-6.4.0.tgz#c382a9e70fdd1247c09c7ece7854622db4d46234"
+  integrity sha512-RZRLD7qUz9OdmCn0JkW7pOiUsR7v9NtqnYKfqrxXsfO2ozMLR2/MjHaSPpdbMr4VE5TY6MwzAXUSkheN2ldqug==
+  dependencies:
+    immutable "^3.8.1"
+    prop-types "^15.7.2"
+    seamless-immutable "^7.1.3"
+
 console-browserify@^1.1.0:
   version "1.1.0"
   resolved "https://gitlab.ursip.ru/nexus/repository/npm/console-browserify/-/console-browserify-1.1.0.tgz#f0241c45730a9fc6323b206dbf38edc741d0bb10"
@@ -5269,6 +5278,11 @@ immer@1.7.2:
   version "1.7.2"
   resolved "https://gitlab.ursip.ru/nexus/repository/npm/immer/-/immer-1.7.2.tgz#a51e9723c50b27e132f6566facbec1c85fc69547"
   integrity sha512-4Urocwu9+XLDJw4Tc6ZCg7APVjjLInCFvO4TwGsAYV5zT6YYSor14dsZR0+0tHlDIN92cFUOq+i7fC00G5vTxA==
+
+immutable@^3.8.1:
+  version "3.8.2"
+  resolved "https://gitlab.ursip.ru/nexus/repository/npm/immutable/-/immutable-3.8.2.tgz#c2439951455bb39913daf281376f1530e104adf3"
+  integrity sha1-wkOZUUVbs5kT2vKBN28VMOEErfM=
 
 import-cwd@^2.0.0:
   version "2.1.0"
@@ -8637,7 +8651,7 @@ prop-types-exact@^1.2.0:
     object.assign "^4.1.0"
     reflect.ownkeys "^0.2.0"
 
-prop-types@15.x, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@15.x, prop-types@^15.5.0, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://gitlab.ursip.ru/nexus/repository/npm/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -8966,6 +8980,13 @@ react-lifecycles-compat@^3.0.0, react-lifecycles-compat@^3.0.4:
   resolved "https://gitlab.ursip.ru/nexus/repository/npm/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-loadable@^5.5.0:
+  version "5.5.0"
+  resolved "https://gitlab.ursip.ru/nexus/repository/npm/react-loadable/-/react-loadable-5.5.0.tgz#582251679d3da86c32aae2c8e689c59f1196d8c4"
+  integrity sha512-C8Aui0ZpMd4KokxRdVAm2bQtI03k2RMRNzOB+IipV3yxFTSVICv7WoUr5L9ALB5BmKO1iHgZtWM8EvYG83otdg==
+  dependencies:
+    prop-types "^15.5.0"
+
 react-modal@^3.8.1:
   version "3.8.1"
   resolved "https://gitlab.ursip.ru/nexus/repository/npm/react-modal/-/react-modal-3.8.1.tgz#7300f94a6f92a2e17994de0be6ccb61734464c9e"
@@ -9123,6 +9144,46 @@ recursive-readdir@2.2.2:
   dependencies:
     minimatch "3.0.4"
 
+redux-devtools-extension@^2.13.7:
+  version "2.13.8"
+  resolved "https://gitlab.ursip.ru/nexus/repository/npm/redux-devtools-extension/-/redux-devtools-extension-2.13.8.tgz#37b982688626e5e4993ff87220c9bbb7cd2d96e1"
+  integrity sha512-8qlpooP2QqPtZHQZRhx3x3OP5skEV1py/zUdMY28WNAocbafxdG2tRD1MWE7sp8obGMNYuLWanhhQ7EQvT1FBg==
+
+redux-dynamic-middlewares@^1.0.0:
+  version "1.0.0"
+  resolved "https://gitlab.ursip.ru/nexus/repository/npm/redux-dynamic-middlewares/-/redux-dynamic-middlewares-1.0.0.tgz#a4c5859a6018a1d7fab3bdd4989f51095c806d15"
+  integrity sha512-smX1eY17dH90FVtXL6JPW01on1ptP4SOlkDYON5Lka52RNcZfgWM6hvtoZKA3O+dZL2/ytbS+tHo2gdKln5iHw==
+
+redux-dynamic-modules-core@^5.0.0-alpha.0:
+  version "5.0.0-alpha.0"
+  resolved "https://gitlab.ursip.ru/nexus/repository/npm/redux-dynamic-modules-core/-/redux-dynamic-modules-core-5.0.0-alpha.0.tgz#9875cff8e6e3ed83ed1ea048af24d8fd981e9991"
+  integrity sha512-c04uiaudeKLj4R6bwI+R0Y5D7+D7M7gwoXDCCjyz5pHneUoM89gGoO5+ySnEqNmd8Kro2eZpUkFzY5Qo7g/U2w==
+  dependencies:
+    redux-devtools-extension "^2.13.7"
+    redux-dynamic-middlewares "^1.0.0"
+
+redux-dynamic-modules-react@^5.0.0-alpha.0:
+  version "5.0.0-alpha.0"
+  resolved "https://gitlab.ursip.ru/nexus/repository/npm/redux-dynamic-modules-react/-/redux-dynamic-modules-react-5.0.0-alpha.0.tgz#3f4089f8ee65512781d7c733bede4db27a496c24"
+  integrity sha512-ex2tm9pgX/T1s3RYynGioPgPZXevq2jetYqufCOW1megbvVSZAM+7JYAfFcOev5leGuEvoiMsQmW05adwS08qA==
+  dependencies:
+    redux-devtools-extension "^2.13.7"
+    redux-dynamic-middlewares "^1.0.0"
+    redux-dynamic-modules-core "^5.0.0-alpha.0"
+
+redux-dynamic-modules-saga@^5.0.0-alpha.0:
+  version "5.0.0-alpha.0"
+  resolved "https://gitlab.ursip.ru/nexus/repository/npm/redux-dynamic-modules-saga/-/redux-dynamic-modules-saga-5.0.0-alpha.0.tgz#5426418c3ef67827e4e54e5dd16062d87e3ad2e4"
+  integrity sha512-UFOsc6EdplhS5rBIwxJ1IlwxMNpRFYtutojJIRvHuK69yP6V4SrDHhe6L1QlQhqULVzW+on/PD2c7atfxRDVbg==
+
+redux-dynamic-modules@^5.0.0-alpha.0:
+  version "5.0.0-alpha.0"
+  resolved "https://gitlab.ursip.ru/nexus/repository/npm/redux-dynamic-modules/-/redux-dynamic-modules-5.0.0-alpha.0.tgz#0307ebe1d61a53bafa084134db1c64be5ffccc0c"
+  integrity sha512-3MXQ/8ghGhM82M7wb+H57mJuUOg3B96CQcItYICAvrBRZw3y79SlN2pNg4IifNJ0AAvEwj274Hzlq5NPBl+Aaw==
+  dependencies:
+    redux-dynamic-modules-core "^5.0.0-alpha.0"
+    redux-dynamic-modules-react "^5.0.0-alpha.0"
+
 redux-logger@^3.0.6:
   version "3.0.6"
   resolved "https://gitlab.ursip.ru/nexus/repository/npm/redux-logger/-/redux-logger-3.0.6.tgz#f7555966f3098f3c88604c449cf0baf5778274bf"
@@ -9172,7 +9233,7 @@ redux-saga@^1.0.2:
   dependencies:
     "@redux-saga/core" "^1.0.3"
 
-"redux@>=0.10 <5":
+"redux@>=0.10 <5", redux@^4.0.1:
   version "4.0.1"
   resolved "https://gitlab.ursip.ru/nexus/repository/npm/redux/-/redux-4.0.1.tgz#436cae6cc40fbe4727689d7c8fae44808f1bfef5"
   integrity sha512-R7bAtSkk7nY6O/OYMVR9RiBI+XghjF9rlbl5806HJbQph0LJVHZrU5oaO4q70eUKiqMRqm4y07KLTlMZ2BlVmg==
@@ -9610,6 +9671,11 @@ schema-utils@^1.0.0:
     ajv "^6.1.0"
     ajv-errors "^1.0.0"
     ajv-keywords "^3.1.0"
+
+seamless-immutable@^7.1.3:
+  version "7.1.4"
+  resolved "https://gitlab.ursip.ru/nexus/repository/npm/seamless-immutable/-/seamless-immutable-7.1.4.tgz#6e9536def083ddc4dea0207d722e0e80d0f372f8"
+  integrity sha512-XiUO1QP4ki4E2PHegiGAlu6r82o5A+6tRh7IkGGTVg/h+UoeX4nFBeCGPOhb4CYjvkqsfm/TUtvOMYC1xmV30A==
 
 select-hose@^2.0.0:
   version "2.0.0"

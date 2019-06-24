@@ -12,24 +12,18 @@ const types = {
 };
 
 /* Action creators */
-const actions = {
-	load() {
-		return {
-			type: LOAD_LIKES,
-			payload: {
-				request: {
-					url: `${api}`
-				}
-			}
-		};
-	}
+export const load = likes => {
+	return {
+		type: LOAD_LIKES,
+		payload: {likes}
+	};
 };
 
 /* reducer */
 export default function reducer(likes = {}, {type, payload}) {
 	switch (type) {
 		case success(LOAD_LIKES):
-			return payload.data;
+			return payload;
 
 		case error(LOAD_LIKES):
 		default:
@@ -37,4 +31,4 @@ export default function reducer(likes = {}, {type, payload}) {
 	}
 }
 
-export {name, api, types, actions};
+export {name, api, types};
