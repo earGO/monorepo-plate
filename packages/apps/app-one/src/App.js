@@ -3,8 +3,6 @@ import './App.css';
 
 import {CompOne, CompTwo, Weather} from '@project/components';
 
-// We will load the widgets async using react-loadable.
-import Loadable from 'react-loadable';
 import {Provider} from 'react-redux';
 // CreateStore allows us to load/unload modules dynamically.
 import {createStore} from 'redux-dynamic-modules-core';

@@ -1,4 +1,4 @@
-import {success, error} from 'redux-saga-requests';
+import {error} from 'redux-saga-requests';
 import produce from 'immer';
 
 const name = 'weather-api';
