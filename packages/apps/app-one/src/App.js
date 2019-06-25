@@ -17,12 +17,6 @@ class App extends Component {
 	constructor(props) {
 		super(props);
 
-		// Define the initial state where none of the widgets are visible
-		this.state = {
-			// eslint-disable-next-line react/no-unused-state
-			weather: false
-		};
-
 		/**
 		 * Configure the store and load the thunk and saga extension
 		 * The extensions are optional and you can choose extension based on the middleware you use
@@ -64,47 +58,21 @@ class App extends Component {
 						<CompTwo />
 					</div>
 					<h1>Widgets</h1>
-					<div className="checkboxes">
-						<input
-							type="checkbox"
-							onChange={this.onWeatherToggled}
-						/>
-						<label>Weather</label>
-					</div>
 					<div className="widgets">{this.renderContent()}</div>
 				</header>
 			</div>
 		);
 	}
-	onWeatherToggled = () => {
-		this.setState({weather: !this.state.weather});
-	};
 
 	renderContent = () => {
 		return (
 			// Pass the configured store to redux Provider
 			// and render the widgets based on the state
 			<Provider store={this.store}>
-				<>{this.getWeather()}</>
+				<Weather />
 			</Provider>
 		);
 	};
-
-	getWeather() {
-		if (!this.state.weather) {
-			return null;
-		}
-		if (this._weather) {
-			return this._weather;
-		}
-
-		const LoadableWeather = Loadable({
-			loader: () => <Weather />,
-			loading: () => <div>Loading Weather...</div>
-		});
-		this._weather = <LoadableWeather />;
-		return this._weather;
-	}
 }
 
 export default App;

@@ -2,72 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="711d04f7-901a-4484-b7fa-93b800f439bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/573a33843282a3d6ad074ff1601c76f41c528e0c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a17995e60c78d4972ff822ae898e74963b5dc61a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/apps/app-one/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/app-one/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/apps/app-one/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/app-one/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/apps/app-one/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/app-one/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/apps/app-one/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/.mock/db.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/weather-widget/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/weather-widget/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/weather-widget/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/weather-widget/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/weather-widget/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/weather-widget/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/components/likes/Dislike.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/components/likes/Like.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/components/likes/Likes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/components/likes/LikesAmnt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/components/likes/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/components/likes/__tests__/dom.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/components/likes/__tests__/redux.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/components/likes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/components/likes/likes-duck.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/components/user/user-duck.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/weather-widget/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/weather-widget/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/weather-widget/src/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/weather-widget/src/serviceWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/services/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/services/likes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/services/user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/utils/debounce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/utils/hashTables.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/utils/noop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/utils/selectorOnId.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/utils/serverRequests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/utils/testApiCall.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/src/utils/testUtils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/component-w-app/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components-w-app/weather-widget/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/weather-widget/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components-w-app/weather-widget/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components-w-app/weather-widget/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/weather-widget/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components-w-app/weather-widget/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components-w-app/weather-widget/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components-w-app/weather-widget/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components-w-app/weather-widget/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components-w-app/weather-widget/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/weather-widget/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components-w-app/weather-widget/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components-w-app/weather-widget/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components-w-app/weather-widget/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components-w-app/weather-widget/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components-w-app/weather-widget/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components-w-app/weather-widget/src/weather/WeatherComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/weather-widget/src/weather/WeatherComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components-w-app/weather-widget/src/weather/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/weather-widget/src/weather/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components-w-app/weather-widget/src/weather/weather-duck.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/weather-widget/src/weather/weather-duck.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components-w-app/weather-widget/src/weather/weather-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/apps/weather-widget/src/weather/weather-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components-w-app/weather-widget/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/apps/weather-widget/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/apps/weather-widget/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/apps/weather-widget/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/apps/weather-widget/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/apps/weather-widget/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/apps/weather-widget/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/apps/weather-widget/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/apps/weather-widget/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/apps/weather-widget/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/apps/weather-widget/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/apps/weather-widget/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/apps/weather-widget/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/apps/weather-widget/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/apps/weather-widget/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/apps/weather-widget/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/apps/weather-widget/src/weather/WeatherComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/apps/weather-widget/src/weather/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/apps/weather-widget/src/weather/weather-duck.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/apps/weather-widget/src/weather/weather-service.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/components/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/src/weather/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/src/weather/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -86,29 +44,72 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/packages/apps/app-one/src/App.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+                <state relative-caret-position="-138">
+                  <caret line="24" selection-start-line="24" selection-end-line="26" selection-end-column="11" />
                   <folding>
-                    <element signature="e#180#218#0" expanded="true" />
+                    <element signature="e#0#39#0" expanded="true" />
+                    <element signature="e#181#219#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/packages/components/package.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/packages/components/src/CompTwo/CompTwo.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="153">
+                  <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/packages/components/package.json">
+            <entry file="file://$PROJECT_DIR$/packages/components/src/Weather/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="202">
-                  <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+                <state relative-caret-position="119">
+                  <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#0#50#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/packages/apps/app-one/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+                <state relative-caret-position="272">
+                  <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/packages/components/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="51">
+                  <caret line="3" selection-start-line="3" selection-end-line="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/packages/components/src/CompTwo/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="17">
+                  <caret line="1" selection-start-line="1" selection-end-line="1" />
                 </state>
               </provider>
             </entry>
@@ -118,44 +119,25 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/packages/apps/weather-widget/src/main.js">
+            <entry file="file://$PROJECT_DIR$/packages/apps/app-one/src/App.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="47" selection-start-column="47" selection-end-column="47" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/packages/apps/weather-widget/src/App.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="952">
-                  <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
+                <state relative-caret-position="381">
+                  <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
                   <folding>
-                    <element signature="e#96#134#0" expanded="true" />
-                    <element signature="e#497#559#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/packages/apps/weather-widget/src/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" selection-start-line="12" selection-end-line="12" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
+                    <element signature="e#0#39#0" expanded="true" />
+                    <element signature="e#181#219#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/packages/apps/weather-widget/package.json">
+            <entry file="file://$PROJECT_DIR$/packages/components/src/Weather/weather-duck.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="50" />
+                <state>
+                  <folding>
+                    <element signature="e#0#85#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -200,11 +182,12 @@
         <option value="$PROJECT_DIR$/packages/apps/weather-widget/src/main.js" />
         <option value="$PROJECT_DIR$/packages/apps/weather-widget/package.json" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/packages/components/index.js" />
-        <option value="$PROJECT_DIR$/packages/apps/weather-widget/src/App.js" />
-        <option value="$PROJECT_DIR$/packages/apps/app-one/src/App.js" />
         <option value="$PROJECT_DIR$/packages/components/package.json" />
         <option value="$PROJECT_DIR$/packages/apps/app-one/package.json" />
+        <option value="$PROJECT_DIR$/packages/components/index.js" />
+        <option value="$PROJECT_DIR$/packages/apps/weather-widget/src/App.js" />
+        <option value="$PROJECT_DIR$/packages/components/src/Weather/index.js" />
+        <option value="$PROJECT_DIR$/packages/apps/app-one/src/App.js" />
       </list>
     </option>
   </component>
@@ -254,38 +237,6 @@
               <item name="react-workspaces-playground-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-workspaces-playground-master" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="app-one" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-workspaces-playground-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-workspaces-playground-master" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="weather-widget" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-workspaces-playground-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-workspaces-playground-master" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="weather-widget" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-workspaces-playground-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-workspaces-playground-master" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="weather-widget" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-workspaces-playground-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-workspaces-playground-master" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -301,7 +252,15 @@
               <item name="packages" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
+              <item name="CompTwo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-workspaces-playground-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-workspaces-playground-master" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Weather" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -366,12 +325,12 @@
       <updated>1561372188340</updated>
       <workItem from="1561372189473" duration="1324000" />
       <workItem from="1561403114038" duration="7891000" />
-      <workItem from="1561454743073" duration="597000" />
+      <workItem from="1561454743073" duration="2048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14165000" />
+    <option name="totallyTimeSpent" value="15616000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="0" width="1918" height="1040" extended-state="0" />
@@ -511,48 +470,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/components/src/CompTwo/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/storybook/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/components/src/weather/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/components/src/CompTwo/CompTwo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/components/setupTests.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/components/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/apps/weather-widget/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -568,6 +490,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/packages/apps/weather-widget/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/apps/app-one/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/packages/apps/weather-widget/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -578,45 +523,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/components/package.json">
+    <entry file="file://$PROJECT_DIR$/packages/components/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/components/src/CompTwo/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/components/src/CompTwo/CompTwo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/apps/weather-widget/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
+        <state relative-caret-position="782">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="e#96#134#0" expanded="true" />
             <element signature="e#497#559#0" expanded="true" />
+            <element signature="n#!!block;n#render#0;n#App#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/components/src/Weather/weather-duck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/components/src/Weather/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/apps/app-one/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="-138">
+          <caret line="24" selection-start-line="24" selection-end-line="26" selection-end-column="11" />
           <folding>
-            <element signature="e#180#218#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#181#219#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/apps/weather-widget/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/apps/app-one/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        <state relative-caret-position="272">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/components/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>
