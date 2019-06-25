@@ -2,7 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "test": "FORCE_COLOR=true lerna run lint && CI=true FORCE_COLOR=true lerna run test -- --coverage",
+    "test": "lerna run test",
     "deploy": "FORCE_COLOR=true lerna run deploy",
     "precommit": "lint-staged",
     "storybook": "cd packages/storybook && start-storybook -p 9009 -s public",

@@ -43,7 +43,12 @@ function* loadWeatherData() {
 	yield put(serviceActions.weatherLoaded(data));
 }
 
-export {name, selectors, reducers};
+const sagas = {
+	weatherSaga,
+	loadWeatherData
+};
+
+export {name, selectors, reducers, sagas};
 
 export function getWeatherModule() {
 	return {
