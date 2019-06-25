@@ -1,30 +1,26 @@
 import React, {Component} from 'react';
-import './App.css';
-
-import {CompOne, CompTwo, Weather} from '@project/components';
-
 // We will load the widgets async using react-loadable.
 import Loadable from 'react-loadable';
 import {Provider} from 'react-redux';
-// CreateStore allows us to load/unload modules dynamically.
+// createStore allows us to load/unload modules dynamically.
 import {createStore} from 'redux-dynamic-modules-core';
 // Saga extension allows us to use Saga middleware in the module store.
 import {getSagaExtension} from 'redux-dynamic-modules-saga';
 // Thunk extension allows us to use Thunk middleware in the module store.
 import {getThunkExtension} from 'redux-dynamic-modules-thunk';
+import './App.css';
 
 class App extends Component {
 	constructor(props) {
 		super(props);
 
-		// Define the initial state where none of the widgets are visible
+		// define the initial state where none of the widgets are visible
 		this.state = {
-			// eslint-disable-next-line react/no-unused-state
 			weather: false
 		};
 
 		/**
-		 * Configure the store and load the thunk and saga extension
+		 * configure the store and load the thunk and saga extension
 		 * The extensions are optional and you can choose extension based on the middleware you use
 		 * You can also build your own extensions for any other middleware e.g. redux-observable
 		 */
@@ -36,46 +32,16 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<header className="App-header">
-					<h1>
-						<a
-							className="App-link"
-							href="https://github.com/react-workspaces/cra-workspaces-playground"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<strong>React</strong> Workspaces
-						</a>
-					</h1>
-					<h2>Hot Reload Your Workspaces</h2>
-					<p className="body">
-						<code className="file">
-							packages/apps/app-one/src/App.js
-						</code>
-						<code className="file">
-							packages/components/src/CompOne/CompOne.js
-						</code>
-						<code className="file">
-							packages/components/src/CompTwo/CompTwo.js
-						</code>
-					</p>
-					<div className="components">
-						<CompOne />
-						<CompTwo />
-					</div>
-					<h1>Widgets</h1>
-					<div className="checkboxes">
-						<input
-							type="checkbox"
-							onChange={this.onWeatherToggled}
-						/>
-						<label>Weather</label>
-					</div>
-					<div className="widgets">{this.renderContent()}</div>
-				</header>
+				<h1>Widgets</h1>
+				<div className="checkboxes">
+					<input type="checkbox" onChange={this.onWeatherToggled} />
+					<label>Weather</label>
+				</div>
+				<div className="widgets">{this.renderContent()}</div>
 			</div>
 		);
 	}
+
 	onWeatherToggled = () => {
 		this.setState({weather: !this.state.weather});
 	};
@@ -99,7 +65,7 @@ class App extends Component {
 		}
 
 		const LoadableWeather = Loadable({
-			loader: () => <Weather />,
+			loader: () => import('./weather'),
 			loading: () => <div>Loading Weather...</div>
 		});
 		this._weather = <LoadableWeather />;

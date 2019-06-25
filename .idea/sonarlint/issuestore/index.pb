@@ -16,12 +16,24 @@ R
 "packages/apps/app-one/src/index.js,1\a\1a7f973d77d6d36a491ca6206b6589f5b566d2d9
 P
  packages/components/package.json,6\7\670faacdea0a007579b778a31326b7b1802f325d
-U
-%packages/component-w-app/package.json,a\1\a17995e60c78d4972ff822ae898e74963b5dc61a
 R
 "packages/apps/app-one/package.json,5\d\5d71d73e0611cd209c7df1b92c0d052b462e8ae9
-S
-#packages/component-w-app/src/App.js,5\7\573a33843282a3d6ad074ff1601c76f41c528e0c
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+Q
+!packages/apps/weather-widget/.env,0\f\0fc227cc037c56c333bbf9560a15c68fcb477b49
+_
+/packages/components/src/CompTwo/CompTwo.spec.js,a\a\aa5533ef7d8d4e052f63f9ef8f1ee7d1982e9bd5
+W
+'packages/apps/weather-widget/src/App.js,6\2\6204511ae37b46eb071120c4b536314108134f2f
+Y
+)packages/apps/weather-widget/src/index.js,4\6\46a5cb3fe1ad69d689f6803e62027248e12462e0
+Q
+!packages/components/setupTests.js,5\0\501d430cb3872c2b467c56f5098a70427c988967
+X
+(packages/apps/weather-widget/src/main.js,2\1\21d6f83d91325aabe1a537987695e50ac235a207
+Y
+)packages/apps/weather-widget/package.json,1\9\19573eb2f72d434cbaa692ae6fef7463fd61c998
+O
+packages/storybook/package.json,a\d\ada4dc37f2a2fa9b36537323539da5e3c4f5eda7

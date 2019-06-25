@@ -3,7 +3,12 @@
   "private": true,
   "scripts": {
     "test": "FORCE_COLOR=true lerna run lint && CI=true FORCE_COLOR=true lerna run test -- --coverage",
-    "deploy": "FORCE_COLOR=true lerna run deploy"
+    "deploy": "FORCE_COLOR=true lerna run deploy",
+    "precommit": "lint-staged",
+    "storybook": "cd packages/storybook && start-storybook -p 9009 -s public",
+    "build-storybook": "lerna exec --scope library-name -- babel src -d dist --copy-files --ignore \"src/stories/\"",
+    "watch-storybook": "lerna exec --scope library-name -- babel src -d dist --watch --copy-files --ignore \"src/stories/\"",
+    "start-app1": "cd packages/appps/app-one && react-scripts start"
   },
   "workspaces": {
     "packages": [
