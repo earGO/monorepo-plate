@@ -1,13 +1,10 @@
 {
-  "lerna": "3.14.1",
-  "registry": "https://gitlab.ursip.ru/nexus/repository/npm",
-  "packages": [
-    "packages/*"
-  ],
+  "useWorkspaces": true,
+  "packages": ["packages/*/*"],
+  "version": "1.0.0",
   "command": {
-    "bootstrap": {
-      "npmClientArgs": ["--no-package-lock"]
+    "run": {
+      "npmClient": "yarn"
     }
-  },
-  "version": "independent"
+  }
 }

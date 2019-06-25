@@ -1,0 +1,59 @@
+{
+  "name": "@project/components",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "main:src": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "lint": "eslint ./src/**/*.js --max-warnings=0 --format=codeframe"
+  },
+  "dependencies": {
+    "@react-workspaces/react-scripts": "3.0.0-alpha-04",
+    "cross-env": "5.0.5",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "7.1.0",
+    "redux": "4.0.1",
+    "redux-dynamic-modules": "5.0.0-alpha.0",
+    "redux-dynamic-modules-core": "5.0.0-alpha.0",
+    "redux-dynamic-modules-react": "5.0.0-alpha.0",
+    "redux-dynamic-modules-saga": "5.0.0-alpha.0",
+    "redux-dynamic-modules-thunk": "5.0.0-alpha.0",
+    "redux-logger": "3.0.6",
+    "redux-saga": "1.0.3",
+    "redux-saga-requests": "0.25.0",
+    "redux-thunk": "2.3.0",
+    "reselect": "4.0.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/setupTests.{js,jsx}",
+      "!src/serviceWorker.{js,jsx}",
+      "!src/**/*.(spec|test|stories).{js,jsx}"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 98,
+        "branches": 98,
+        "functions": 98,
+        "lines": 98
+      }
+    }
+  },
+  "license": "MIT"
+}
