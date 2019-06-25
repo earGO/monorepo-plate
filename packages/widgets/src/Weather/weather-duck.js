@@ -5,6 +5,7 @@ import weatherService, {
 import {createSelector} from 'reselect';
 import {call, put} from 'redux-saga/effects';
 import {logger} from 'redux-logger';
+import {serverRequests} from '@project/utils';
 
 const name = 'weather-app';
 
@@ -38,9 +39,8 @@ export function* weatherSaga() {
 function* loadWeatherData() {
 	const url = api;
 
-	const response = yield call(fetch, url);
-	const json = yield call([response, response.json]);
-	yield put(serviceActions.weatherLoaded(json));
+	const data = yield call(serverRequests.simpleGetRequest, url);
+	yield put(serviceActions.weatherLoaded(data));
 }
 
 export {name, selectors, reducers};

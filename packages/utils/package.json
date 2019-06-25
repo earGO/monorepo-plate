@@ -1,7 +1,7 @@
 {
-  "name": "@project/widgets",
+  "name": "@project/utils",
   "version": "1.0.0",
-  "description": "package with redux connected components",
+  "description": "Utils for other modules",
   "main": "src/index.js",
   "main:src": "src/index.js",
   "scripts": {
@@ -9,12 +9,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint": "eslint ./src/**/*.js --max-warnings=0 --format=codeframe"
-  },
-  "dependencies": {
-    "@project/utils": "1.0.0",
-    "redux-dynamic-modules": "5.0.0-alpha.0",
-    "redux-dynamic-modules-react": "5.0.0-alpha.0",
-    "reselect": "4.0.0"
   },
   "eslintConfig": {
     "extends": "react-app"

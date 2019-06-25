@@ -15,7 +15,8 @@
       "packages/apps/*",
       "packages/components",
       "packages/storybook",
-      "packages/widgets"
+      "packages/widgets",
+      "packages/utils"
     ],
     "nohoist": [
       "**/webpack-dev-server",
