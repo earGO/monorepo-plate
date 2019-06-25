@@ -1,5 +1,7 @@
 ##React Boilerplate для модульного приложения
 
+- [Если проблемы с запуском](#Проблемы)
+
 Модульность реализована через Yarn Workspaces (https://yarnpkg.com/blog/2017/08/02/introducing-workspaces/)
 
 Storybook расположена в packages/storybook
@@ -38,6 +40,13 @@ import {Weather} from '@project/widgets';
 
 Приложение запускается командой yarn start из папки приложения
 
+
+###Проблемы
+Если приложение не запускается из-за конфликтующих пакетов, добавьте в корень приложения файл .env со следующей строкой:
+```
+SKIP_PREFLIGHT_CHECK=true
+```
+без кавычек и прочего. Если не помогает - делайте Issue.
 
 
 ## Исходное readme от собравшего boilerplate
