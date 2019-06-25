@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@project/components": "1.0.0",
+    "@project/widgets": "1.0.0",
     "@react-workspaces/react-scripts": "3.0.0-alpha-04",
     "cross-env": "5.0.5",
     "enzyme": "^3.9.0",

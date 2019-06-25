@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
 
-import {CompOne, CompTwo, Weather} from '@project/components';
+import {CompOne, CompTwo} from '@project/components';
+import {Weather} from '@project/widgets';
 
 import {Provider} from 'react-redux';
 // CreateStore allows us to load/unload modules dynamically.
