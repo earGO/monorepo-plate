@@ -32,7 +32,7 @@ export default function weatherReducer(state, action) {
 
 			case error(LOAD_WEATHER):
 			default:
-				return draft;
+				return state;
 		}
 	});
 }

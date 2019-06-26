@@ -7,14 +7,18 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --watchAll --silent --coverage",
+    "test": "react-scripts test --watchAll --coverage",
     "lint": "eslint ./src/**/*.js --max-warnings=0 --format=codeframe"
   },
-  "dependencies": {
+  "peerDependencies": {
     "@project/utils": "1.0.0",
     "redux-dynamic-modules": "5.0.0-alpha.0",
     "redux-dynamic-modules-react": "5.0.0-alpha.0",
     "reselect": "4.0.0"
+  },
+  "devDependencies": {
+    "redux-mock-store": "^1.5.3",
+    "redux-saga-test-plan": "^4.0.0-beta.3"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,18 +35,7 @@
       "!src/setupTests.{js,jsx}",
       "!src/serviceWorker.{js,jsx}",
       "!src/**/*.(spec|test|stories).{js,jsx}"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "statements": 98,
-        "branches": 98,
-        "functions": 98,
-        "lines": 98
-      }
-    }
+    ]
   },
-  "license": "MIT",
-  "devDependencies": {
-    "redux-saga-test-plan": "^4.0.0-beta.3"
-  }
+  "license": "MIT"
 }
