@@ -6,7 +6,6 @@ function WeatherComponent() {
 	const weatherData = useSelector(selectors.weatherData);
 
 	const data = weatherData[0];
-	console.log(data);
 	if (typeof data !== 'undefined') {
 		const {name, weather, main} = data;
 		const description = weather[0].description;

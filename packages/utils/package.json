@@ -7,7 +7,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --watchAll --coverage",
+    "test": "react-scripts test --watchAll --coverage --silent",
     "lint": "eslint ./src/**/*.js --max-warnings=0 --format=codeframe"
   },
   "eslintConfig": {
