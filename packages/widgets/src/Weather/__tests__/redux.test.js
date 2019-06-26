@@ -45,8 +45,6 @@ describe('Test weather duck selectors', () => {
 	it('loading should select Loading if present in state', () => {
 		let stateWithLoading = {...initialMockState};
 		stateWithLoading[name] = {loading: true, otherCaption: 'otherCaption'};
-		console.log(stateWithLoading);
-
 		expect(selectors.loading(stateWithLoading)).toEqual(true);
 	});
 	it('weatherData should select weatherReducer if present in state', () => {

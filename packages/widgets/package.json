@@ -12,11 +12,19 @@
   },
   "peerDependencies": {
     "@project/utils": "1.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "redux-dynamic-modules": "5.0.0-alpha.0",
     "redux-dynamic-modules-react": "5.0.0-alpha.0",
-    "reselect": "4.0.0"
+    "reselect": "4.0.0",
+    "redux-dynamic-modules-core": "5.0.0-alpha.0",
+    "redux-dynamic-modules-saga": "5.0.0-alpha.0",
+    "redux-dynamic-modules-thunk": "5.0.0-alpha.0"
   },
   "devDependencies": {
+    "cross-env": "5.0.5",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "redux-mock-store": "^1.5.3",
     "redux-saga-test-plan": "^4.0.0-beta.3"
   },
