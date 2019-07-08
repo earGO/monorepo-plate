@@ -1,5 +1,5 @@
 {
-  "name": "app-two",
+  "name": "@project/box-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,15 +21,22 @@
     "redux-saga": "1.0.3",
     "redux-saga-requests": "0.25.0",
     "redux-thunk": "2.3.0",
-    "prop-types": "^15.6.2"
+    "prop-types": "^15.6.2",
+    "@project/utils": "1.0.0",
+    "redux-dynamic-modules": "5.0.0-alpha.0",
+    "redux-dynamic-modules-react": "5.0.0-alpha.0",
+    "reselect": "4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll --coverage",
     "lint": "eslint ./src/**/*.js --max-warnings=0 --format=codeframe",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [

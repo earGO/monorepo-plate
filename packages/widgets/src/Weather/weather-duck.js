@@ -50,11 +50,6 @@ export function getWeatherModule() {
 		// Maps the Store key to the reducer
 		reducerMap: {
 			[weatherService.name]: weatherService,
-			[name]: (state = {}, action) => ({
-				...state,
-				...(reducers[action.type] &&
-					reducers[action.type](state, action))
-			})
 		},
 		middlewares: [logger],
 		// This module uses redux-saga middleware
